@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+        }
+        .result-container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8); /* White with 80% opacity for transparency */
+            padding: 40px; /* Increased padding */
+            border-radius: 12px; /* Increased border radius for smoother edges */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for better effect */
+            width: 80%; /* Increased width for a larger container */
+            max-width: 600px; /* Maximum width to prevent it from being too large on wider screens */
+        }
+        h1 {
+            color: #333;
+            font-size: 28px; /* Larger font size for the heading */
+        }
+        p {
+            font-size: 20px; /* Slightly larger font size for better readability */
+            color: #555;
+            margin: 20px 0; /* Added margin for better spacing */
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF; /* Button color */
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        a:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h1>Predicted Salary Range</h1>
+        <p>The predicted salary range is <strong>{{ salary_range }}</strong> Rs.</p>
+        <a href="/">Go Back</a>
+    </div>
+</body>
+</html>
